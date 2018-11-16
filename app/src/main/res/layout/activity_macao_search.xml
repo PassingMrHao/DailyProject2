@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myActivity.MacaoSearchActivity">
+
+    <mrhao.com.dailyproject2.utils.MySearchViewUtils.MySearchView
+        android:layout_marginTop="28dp"
+        android:id="@+id/mysearch_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:textSizeSearch="6dp"
+        app:textColorSearch="#3F51B5"
+        app:textHintSearch="请输入要搜索的内容"
+        app:searchBlockHeight="150"
+        app:searchBlockColor="#ffffff"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="152dp"
+    android:background="@drawable/shape_dialog_ios">
+
+    <TextView
+        android:id="@+id/dia_title"
+        android:letterSpacing="0.1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#2c2c2c"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/dia_msg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:textColor="#313131"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_above="@+id/aa4544"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dedede"/>
+    <LinearLayout
+        android:id="@+id/aa4544"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#969696"
+            android:textSize="16sp"/>
+        <TextView
+            android:background="#dedede"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#FFB500"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</RelativeLayout>

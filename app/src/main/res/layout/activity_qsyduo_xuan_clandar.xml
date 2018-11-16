@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myActivity.QSYDuoXuanClandarAct">
+
+    <com.othershe.calendarview.weiget.WeekView
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+    <com.othershe.calendarview.weiget.CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:choose_type="multi" />
+
+</LinearLayout>

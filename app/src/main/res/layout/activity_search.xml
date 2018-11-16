@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".myActivity.SearchActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="218dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/macao_meishi" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.58"
+                android:background="@drawable/btn_white" />
+
+            <LinearLayout
+                android:id="@+id/linlay_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@mipmap/pic_cole" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="在这里搜寻景点、餐厅、娱乐场所吧"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".utils.MySearchViewUtils.MySearchView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/search_block"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginRight="70dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+
+            <mrhao.com.dailyproject2.utils.MySearchViewUtils.EditText_Clear
+                android:id="@+id/et_search"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="264"
+                android:background="@null"
+                android:drawablePadding="8dp"
+                android:gravity="start|center_vertical"
+                android:imeOptions="actionSearch"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-66dp">
+
+            <Button
+                android:id="@+id/btn_sousuo"
+                android:layout_width="66dp"
+                android:layout_height="33sp"
+                android:background="@drawable/btn_qianhong"
+                android:text="搜索"
+                android:textColor="#fff"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/relay_noresult"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@mipmap/no_yinxiang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="16sp"
+                            android:text="\u3000\u3000很抱歉，没有搜索到任何相关结果，请换个关键词试试"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:scrollbars="none"
+                android:id="@+id/recy_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp" />
+
+            <LinearLayout
+                android:visibility="invisible"
+                android:id="@+id/lin_history"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="18dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@mipmap/search_history" />
+
+                <TextView
+                    android:layout_marginLeft="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="搜索历史" />
+            </LinearLayout>
+
+            <mrhao.com.dailyproject2.utils.MySearchViewUtils.SearchListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+            </mrhao.com.dailyproject2.utils.MySearchViewUtils.SearchListView>
+
+            <TextView
+                android:id="@+id/tv_clear"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="8dp"
+                android:background="#fff"
+                android:gravity="center"
+                android:text="清除搜索历史"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/meitu_mianbaonvhai" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="36sp"
+                android:alpha="0.6"
+                android:background="@drawable/btn_qianhong"
+                android:text="搜索框功能"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_majiaurl"
+                android:layout_width="wrap_content"
+                android:layout_height="36sp"
+                android:layout_marginTop="18dp"
+                android:alpha="0.6"
+                android:background="@drawable/btn_qianhong"
+                android:text="马甲包地址控制台"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="13sp" />
+
+            <Button
+
+                android:id="@+id/btn_floatButton"
+                android:layout_width="wrap_content"
+                android:layout_height="36sp"
+                android:layout_marginTop="18dp"
+                android:alpha="0.6"
+                android:background="@drawable/btn_qianhong"
+                android:text="悬浮按钮"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="13sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="36sp"
+                android:layout_marginTop="18dp"
+                android:alpha="0.6"
+                android:background="@drawable/btn_qianhong"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="13sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="36sp"
+                android:layout_marginTop="18dp"
+                android:alpha="0.6"
+                android:background="@drawable/btn_qianhong"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="36sp"
+                android:layout_marginTop="18dp"
+                android:alpha="0.6"
+                android:background="@drawable/btn_qianhong"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="36sp"
+                android:layout_marginTop="18dp"
+                android:alpha="0.6"
+                android:background="@drawable/btn_qianhong"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="36sp"
+                android:layout_marginTop="18dp"
+                android:alpha="0.6"
+                android:background="@drawable/btn_qianhong"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="36sp"
+                android:layout_marginTop="18dp"
+                android:alpha="0.6"
+                android:background="@drawable/btn_qianhong"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="36sp"
+                android:layout_marginTop="18dp"
+                android:alpha="0.6"
+                android:background="@drawable/btn_qianhong"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_picyasuo"
+                android:layout_width="wrap_content"
+                android:layout_height="36sp"
+                android:alpha="0.6"
+                android:background="@drawable/btn_qianhong"
+                android:text="图片压缩"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_calander"
+                android:layout_width="wrap_content"
+                android:layout_height="36sp"
+                android:layout_marginTop="18dp"
+                android:alpha="0.6"
+                android:background="@drawable/btn_qianhong"
+                android:text="青松盈签到日历"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_shuxingdonghua"
+                android:layout_width="wrap_content"
+                android:layout_height="36sp"
+                android:layout_marginTop="18dp"
+                android:alpha="0.6"
+                android:background="@drawable/btn_qianhong"
+                android:text="Android属性动画"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="13sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="36sp"
+                android:layout_marginTop="18dp"
+                android:alpha="0.6"
+                android:background="@drawable/btn_qianhong"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="13sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="36sp"
+                android:layout_marginTop="18dp"
+                android:alpha="0.6"
+                android:background="@drawable/btn_qianhong"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="13sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="36sp"
+                android:layout_marginTop="18dp"
+                android:alpha="0.6"
+                android:background="@drawable/btn_qianhong"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="36sp"
+                android:layout_marginTop="18dp"
+                android:alpha="0.6"
+                android:background="@drawable/btn_qianhong"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="36sp"
+                android:layout_marginTop="18dp"
+                android:alpha="0.6"
+                android:background="@drawable/btn_qianhong"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="36sp"
+                android:layout_marginTop="18dp"
+                android:alpha="0.6"
+                android:background="@drawable/btn_qianhong"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="36sp"
+                android:layout_marginTop="18dp"
+                android:alpha="0.6"
+                android:background="@drawable/btn_qianhong"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
