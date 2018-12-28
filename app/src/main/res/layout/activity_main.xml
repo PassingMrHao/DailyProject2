@@ -64,15 +64,16 @@
                 android:textSize="13sp" />
 
             <Button
+                android:id="@+id/btn_calander2"
                 android:layout_width="wrap_content"
                 android:layout_height="36sp"
                 android:layout_marginTop="18dp"
                 android:alpha="0.6"
                 android:background="@drawable/btn_qianhong"
-                android:text=""
+                android:text="签到日历二"
                 android:textAllCaps="false"
                 android:textColor="#fff"
-                android:textSize="13sp" />
+                android:textSize="12sp" />
 
             <Button
                 android:layout_width="wrap_content"

@@ -34,7 +34,8 @@
         <activity android:name=".myActivity.MaJiaUrlControlAct" />
         <activity android:name=".myActivity.QSYClandarAct" />
         <activity android:name=".myActivity.QSYDuoXuanClandarAct" />
-        <activity android:name=".myActivity.FloatingButtonAct"></activity>
+        <activity android:name=".myActivity.FloatingButtonAct" />
+        <activity android:name=".myActivity.QSYClanderActivity"></activity>
     </application>
 
 </manifest>

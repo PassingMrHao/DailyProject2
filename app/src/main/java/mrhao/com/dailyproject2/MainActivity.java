@@ -2,13 +2,9 @@ package mrhao.com.dailyproject2;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-
-import java.util.concurrent.Delayed;
-import java.util.concurrent.TimeUnit;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -16,6 +12,7 @@ import mrhao.com.dailyproject2.myActivity.FloatingButtonAct;
 import mrhao.com.dailyproject2.myActivity.MaJiaUrlControlAct;
 import mrhao.com.dailyproject2.myActivity.PicYaSuoActivity;
 import mrhao.com.dailyproject2.myActivity.QSYClandarAct;
+import mrhao.com.dailyproject2.myActivity.QSYClanderActivity;
 import mrhao.com.dailyproject2.myActivity.SearchActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
     Button btnFloatButton;
     @BindView(R.id.btn_shuxingdonghua)
     Button btnShuxingdonghua;
+    @BindView(R.id.btn_calander2)
+    Button btnCalander2;
 
 
     @Override
@@ -92,7 +91,14 @@ public class MainActivity extends AppCompatActivity {
         btnShuxingdonghua.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+            }
+        });
 
+        //青松赢签到日历2
+        btnCalander2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,QSYClanderActivity.class));
             }
         });
 
